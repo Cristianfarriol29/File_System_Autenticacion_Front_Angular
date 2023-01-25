@@ -1,0 +1,63 @@
+
+
+<div class="grid_container">
+  <div class="block_1">
+    <div class="digital_lab">
+      <img src="../../assets/image.png" />
+    </div>
+    <div class="typsa_lab">
+      <img src="../../assets/logo-grupo-Typsa-300x300-1.png" />
+    </div>
+  </div>
+  <form (ngSubmit)="assignPermit(form)" class="block_2" #form="ngForm">
+
+      <div class="logo">
+        <a [routerLink]="['']"> <img src="../../assets/logo-grupo-Typsa-300x300-1.png"  /></a>
+      </div>
+
+      <div class="logo_mobile">
+        <div class="logo_mobile-typsa">
+          <img src="../../assets/image.png" />
+        </div>
+        <div class="logo_mobile-lab">
+          <img src="../../assets/logo-grupo-Typsa-300x300-1.png" />
+        </div>
+      </div>
+
+      <div class="input-container">
+        <div class="title">
+          <h2>
+              ¡Bienvenido Administrador!
+          </h2>
+      </div>
+
+          <div class="input-element">
+              <label class="label">Email</label>
+              <input ngModel name="user" placeholder="Ingresa tu correo" />
+          </div>
+
+          <div class="form-button">
+            <button type="submit">
+              Asignar Permiso
+          </button>
+          </div>
+
+          <!-- <div class="form-footer">
+
+            <span class="form-footer-without-account">
+              ¿Todavia no tienes una cuenta?
+          </span>
+            <a  class="form-footer-create-account">Volver al inicio</a>
+        </div> -->
+
+      </div>
+
+
+  </form>
+
+
+
+
+
+</div>
+

@@ -1,0 +1,52 @@
+
+
+<div class="grid_container">
+  <div class="block_1">
+    <div class="digital_lab">
+      <img src="../../assets/image.png" />
+    </div>
+    <div class="typsa_lab">
+      <img src="../../assets/logo-grupo-Typsa-300x300-1.png" />
+    </div>
+  </div>
+  <form class="block_2" #loginForm="ngForm">
+
+      <div class="logo">
+        <a [routerLink]="['']"> <img src="../../assets/logo-grupo-Typsa-300x300-1.png"  /></a>
+      </div>
+
+      <div class="logo_mobile">
+        <div class="logo_mobile-typsa">
+          <img src="../../assets/image.png" />
+        </div>
+        <div class="logo_mobile-lab">
+          <img src="../../assets/logo-grupo-Typsa-300x300-1.png" />
+        </div>
+        </div>
+
+      <div class="input-container">
+        <div class="title">
+          <h2 *ngIf="!msgOfTheResponse">
+              No hay usuario por confirmar
+          </h2>
+          <h2 *ngIf="msgOfTheResponse">
+            {{msgOfTheResponse}}
+        </h2>
+      </div>
+
+      <div class="form-button">
+        <button [routerLink]="['']">
+         Volver al inicio
+      </button>
+      </div>
+      </div>
+
+
+  </form>
+
+
+
+
+
+</div>
+

@@ -1,0 +1,73 @@
+
+
+<div class="grid_container">
+  <div class="block_1">
+    <div class="digital_lab">
+      <!-- <img src="../../assets/image.png" /> -->
+      <h2>Montenegro FileSystem</h2>
+    </div>
+    <div class="typsa_lab">
+      <img src="../../assets/logo-grupo-Typsa-300x300-1.png" />
+    </div>
+  </div>
+  <form (ngSubmit)="handleLoginForm(loginForm)" class="block_2" #loginForm="ngForm">
+    <div class="container-block-2">
+    </div>
+      <div class="logo">
+            <img src="../../assets/logo-grupo-Typsa-300x300-1.png"  />
+      </div>
+      <div class="logo_mobile">
+        <div class="logo_mobile-typsa">
+          <img src="../../assets/image.png" />
+        </div>
+        <div class="logo_mobile-lab">
+          <img src="../../assets/logo-grupo-Typsa-300x300-1.png" />
+        </div>
+      </div>
+
+
+      <div class="input-container">
+        <div class="title">
+          <h2>
+              ¡Welcome!
+          </h2>
+      </div>
+
+          <div class="input-element">
+              <label class="label">Email</label>
+              <input ngModel name="user" placeholder="Enter your email" />
+          </div>
+
+          <div class="input-element">
+            <div class="input-element_password">
+              <label class="label">Password</label>
+              <a [routerLink]="['/forgot-password']">¿Forgot your password?</a>
+            </div>
+            <input ngModel name="pass" type="password" placeholder="Enter your password" />
+          </div>
+
+          <div class="form-button">
+            <button type="submit">
+              Login
+          </button>
+          <span class="form-footer-without-account">
+            ¿Don't have an account yet?
+            <a [routerLink]="['/register']" class="form-footer-create-account"><span style="color: #3987fc; font-weight: 900; ">Create account</span></a>
+        </span>
+
+          </div>
+
+          <div class="form-footer">
+        </div>
+
+      </div>
+
+
+  </form>
+
+
+
+
+
+</div>
+

@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@700&display=swap');
+
+.grid_container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(12, 1fr);
+  width: 100%;
+  @media(max-width: 750px) {
+display: block;
+  }
+  overflow: hidden;
+}
+
+.block_1 {
+  border: 1px solid black;
+  grid-column: 1 / 8  ;
+  grid-row: 1;
+  background: url("../../../../assets/background-red.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  // width: 100%;
+  // height: 100%;
+  @media(max-width: 750px) {
+    display: none;
+      }
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+}
+
+.digital_lab {
+  width: 650px;
+  @media(max-width: 1400px) {
+    width: 450px;
+  }
+}
+.digital_lab img {
+  width: 100%;
+}
+.typsa_lab {
+  width: 90px;
+  @media(max-width: 1400px) {
+    width: 75px;
+  }
+}
+.typsa_lab img {
+  width: 100%;
+}
+
+.block_2 {
+  grid-column: 8 / 13  ;
+  border: 1px solid black;
+  background-color: #16191C;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  @media(max-width: 750px) {
+    height: 100vh;
+    width: 100vw;
+  }
+}
+
+
+
+.logo {
+  position: relative;
+  left: 70%;
+  @media(min-width: 1400px){
+    left: 75%;
+  }
+  @media(max-width: 750px) {
+    left: 72%;
+    width: 75px;
+  }
+  margin-top: 1rem;
+  width: 100px;
+  margin-right: 3rem;
+  }
+
+  .logo img {
+    width: 100%;
+  }
+
+
+
+// /************* Inputs *****************/
+.input-container {
+  display: flex;
+  flex-direction: column;
+height: 100%;
+margin-left: 2rem;
+margin-top: 2rem;
+@media(max-width: 750px) {
+  align-items: center;
+  gap: 2rem;
+}
+}
+
+.input-element {
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 1200px) {
+    height: 50px;
+  }
+  @media(max-width: 750px) {
+    height: 60px;
+  }
+}
+
+
+.label {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 45px;
+  color: #FFFFFF;
+}
+
+.input-element input {
+  width: 70%;
+  height: 30px;
+  @media(max-width: 750px) {
+    height: 40px;
+  }
+background: #16191C;
+border-radius: 6px;
+border: none;
+color: #FFFFFF;
+font-size: 1rem;
+font-family: "Mulish";
+}
+
+// /************* *****************/
+
+.title {
+  font-family: "Mulish";
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  @media(max-width: 750px) {
+    height: 40px;
+    margin-bottom: 2rem;
+
+    margin-right: 3.5rem;
+  }
+
+}
+
+.form-button {
+  grid-column: 1 / 3;
+  grid-row: 7;
+  width: 50%;
+  margin: 0 auto;
+  @media(max-width: 750px) {
+    width: 100%;
+  }
+
+}
+.form-button button {
+
+  background: linear-gradient(180deg, #3969FC 0%, #2A49FF 100%);
+  border-radius: 6px;
+  /* padding: 20px; */
+  width: 50%;
+  @media(max-width: 750px) {
+
+    width: 80%;
+    margin-right: 2.5rem;
+  }
+  height: 40px;
+  color: white;
+  font-family: 'Mulish';
+  cursor: pointer;
+}
+
+.form-footer  {
+  width: 100%;
+  @media(min-width: 1400px) {
+    text-align: center;
+  }
+
+  font-family: "Mulish";
+  font-size: 10px ;
+  margin-top: 4rem;
+  @media(max-width: 750px) {
+    margin-left: 2rem;
+    margin-top: 3rem;
+  }
+}
+
+.form-footer-without-account{
+  color: white;
+  opacity: 50%;
+  font-size: 12px;
+}
+
+.form-footer-create-account{
+ color: white;
+ font-size: 12px;
+}
